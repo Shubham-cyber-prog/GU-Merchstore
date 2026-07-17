@@ -85,8 +85,20 @@ export default {
       boxShadow: {
         'premium': '0 12px 40px -10px rgba(0, 0, 0, 0.04)',
         'premium-hover': '0 24px 50px -12px rgba(0, 0, 0, 0.12)',
+        'brand': '0 20px 50px -15px rgba(138, 23, 58, 0.18)',
+        'brand-lg': '0 28px 60px -20px rgba(138, 23, 58, 0.22)',
+        'gold': '0 12px 30px -10px rgba(212, 175, 55, 0.3)',
         'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.02)',
         'glass-hover': '0 16px 40px 0 rgba(0, 0, 0, 0.04)',
+        'elevated': '0 24px 60px -20px rgba(15, 23, 42, 0.12)',
+        'xs': '0 2px 8px rgba(0, 0, 0, 0.04)',
+      },
+      transitionDuration: {
+        '400': '400ms',
+      },
+      borderRadius: {
+        '3xl': '1.25rem',
+        '4xl': '1.75rem',
       },
       backdropBlur: {
         'xs': '2px',
