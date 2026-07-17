@@ -88,10 +88,10 @@ const ProductCard = ({ product }) => {
   return (
     <Link
       to={`/products/${_id}`}
-      className="group flex flex-col h-full bg-surface border border-border rounded-2xl overflow-hidden hover:shadow-premium-hover transition-all duration-300 relative hover:-translate-y-1"
+      className="group flex flex-col h-full product-card-glow overflow-hidden"
     >
       {/* Category Badge */}
-      <span className="absolute top-3.5 left-3.5 z-10 px-2.5 py-1 rounded-xl bg-surface/90 backdrop-blur-md border border-border/80 font-sans font-bold text-[9px] text-primary tracking-wider uppercase shadow-[0_2px_8px_rgba(0,0,0,0.02)]">
+      <span className="absolute top-3.5 left-3.5 z-10 px-2.5 py-1 rounded-xl bg-surface/90 backdrop-blur-md border border-border/80 font-sans font-bold text-[9px] text-primary tracking-wider uppercase shadow-xs">
         {category}
       </span>
 
@@ -138,7 +138,7 @@ const ProductCard = ({ product }) => {
         {!isOutOfStock && (
           <button
             onClick={handleQuickAdd}
-            className="absolute bottom-4 right-4 p-3 bg-primary hover:bg-primary/95 text-white rounded-2xl shadow-lg translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-10 hover:scale-105 active:scale-95"
+            className="absolute bottom-4 right-4 p-3 btn-primary !p-3 !rounded-2xl translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-10 hover:scale-105 active:scale-95"
             title="Quick Add to Cart"
           >
             <ShoppingCart className="w-4 h-4" />
@@ -164,12 +164,12 @@ const ProductCard = ({ product }) => {
           </span>
         </div>
 
-        <h3 className="font-display font-bold text-xs.5 text-text leading-snug group-hover:text-primary transition-colors line-clamp-2">
+        <h3 className="font-display font-bold text-sm text-text leading-snug group-hover:text-primary transition-colors line-clamp-2">
           {name}
         </h3>
 
         <div className="mt-auto pt-1.5 flex items-baseline justify-between">
-          <span className="font-sans font-black text-sm.5 text-text">
+          <span className="font-display font-black text-base text-text">
             ₹{price.toLocaleString('en-IN')}.00
           </span>
         </div>

@@ -113,11 +113,11 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
       scrolled
-        ? 'bg-surface/95 backdrop-blur-2xl border-b border-border shadow-premium'
-        : 'bg-surface/80 backdrop-blur-xl border-b border-border/50'
+        ? 'bg-surface/95 backdrop-blur-2xl border-b border-border shadow-brand'
+        : 'bg-surface/70 backdrop-blur-xl border-b border-border/40'
     }`}>
-      {/* Top micro-gradient indicator */}
-      <div className="h-[2px] w-full bg-gradient-to-r from-primary via-accent to-primary opacity-60" />
+      {/* Top brand gradient bar */}
+      <div className="h-[3px] w-full bg-gradient-to-r from-brand-maroon-700 via-brand-gold-500 to-brand-maroon-700" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-[72px] gap-4">
@@ -370,7 +370,7 @@ const Navbar = () => {
                 <Link
                   to="/register"
                   state={{ from: location }}
-                  className="px-4 py-2 bg-primary hover:bg-primary/95 text-white rounded-xl text-xs.5 font-bold transition-all duration-200"
+                  className="px-4 py-2 btn-primary text-xs.5 !py-2 !px-5"
                 >
                   Register
                 </Link>

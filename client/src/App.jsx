@@ -31,19 +31,20 @@ const toastOptions = {
   toastOptions: {
     duration: 3500,
     style: {
-      background: '#0F172A',
-      color: '#F8FAFC',
-      borderRadius: '12px',
+      background: 'rgb(var(--surface))',
+      color: 'rgb(var(--text))',
+      borderRadius: '14px',
       fontSize: '13px',
       fontFamily: 'Inter, sans-serif',
       fontWeight: '500',
       padding: '12px 18px',
-      boxShadow: '0 10px 30px -10px rgba(105, 18, 44, 0.15)',
+      border: '1px solid rgb(var(--border))',
+      boxShadow: '0 12px 40px -10px rgba(138, 23, 58, 0.15)',
     },
     success: {
       iconTheme: {
-        primary: '#D4AF37',
-        secondary: '#0F172A',
+        primary: 'rgb(var(--brand-gold-500))',
+        secondary: 'rgb(var(--surface))',
       },
     },
   },
